@@ -1,0 +1,28 @@
+.container{
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+#the_nav{
+    background-color: black;
+}
+.Logins{
+    background-color: white;
+    border-radius: 10px;
+    border-top: 10px solid #AA4465;
+    padding:10px;
+    float:none;
+    text-align:left;
+}
+body {
+  background-image: url("B1.jpg");
+  background-size: cover;
+}

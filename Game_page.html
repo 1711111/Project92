@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      
+      <title>Maths Quiz</title>
+      
+      <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body style="background-color: rgba(179, 61, 61, 0.894);">
+        <label id="player1_name" style="color: white; font-size: large;">Player 1:</label><div id="player1_score" style="color: white; font-size: large;"></div>
+        <label id="player2_name" style="color: white; font-size: large;">Player 2:</label><div id="player2_score" style="color: white; font-size: large;"></div>
+        <br><br>
+        <center>
+            <div class="container">
+                <h2 style="color: white;">Maths Multiplication Quiz</h2>
+                <h3 id="Player_question"><b>Question turn - Player 1</b></h3>
+                <h3 id="Player_answer"><b>Answer turn - Player2</b></h3>
+                <div class="Logins" style="text-align: left;">
+                    <h4 id="Question" style="font-weight: bold; color: black;">Here is where your question will appear</h4>
+                    <br>
+                    <label style="color: black;">Answer: </label><input type="number" placeholder="Type the Answer to the Assigned Question" id="Answer_input" style="width: 40%; color: black;">
+                    <br>
+                    <button onclick="CheckAnswer()" class="btn btn-primary" id="CheckAnswer">Check Answer</button>
+                    <br>
+                
+            </div>
+                <br><br>
+                <div id="Number_1">
+                    <h2 style="color: white;">Number 1</h2>
+                    <input type="number" placeholder="Enter first Number" id="Question_Number_1" style="width: 70%; color: black;">
+                </div>
+                <br><br>
+                <div id="Number_2">
+                    <h2 style="color: white;">Number 2</h2>
+                    <input type="number" placeholder="Enter second Number" id="Questoin_Number_2" style="width: 70%; color: black;;">
+                </div>
+                <button onclick="SendAns()" id="SendAnswer" class="btn btn-success" style="margin-top: 20px; width: 50%;">Send</button>
+
+            </div>
+        </center>
+        <script src="main.js"></script>
+
+    </body>
+</html>
